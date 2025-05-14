@@ -1,0 +1,152 @@
+/* کارت اصلی */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100%;
+  min-width: 264px;
+  max-width: 235px; /* اگه نمی‌خوای خیلی بزرگ بشه */
+  height: 100%;
+  min-height: 389px; /* 👈 ارتفاع مشخص برای تنظیم چسبندگی پایین */
+  
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(9px);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.cards-container {
+ display: grid;
+  grid-template-columns: repeat(4, 1fr); /* چهار ستون مساوی */
+  gap: 20px; /* فاصله بین کارت‌ها */
+  padding: 20px;
+}
+
+
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+/* نشان تخفیف */
+.discount-badge {
+  position: absolute;
+  top: 4px;
+    left: -3px;
+    transform: rotate(-16deg);
+  background: linear-gradient(135deg, #ff4081, #d32f2f);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.discount-badge:hover {
+  transform: rotate(0deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.discount-badge .text-lg {
+  font-size: 16px;
+}
+
+/* تصویر محصول */
+.card-media {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+  border-radius: 16px 16px 0 0;
+}
+
+/* محتویات کارت */
+.card-content {
+  padding: 16px;
+  color: white;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+}
+
+.card-description {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.price-box {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.old-price {
+  display: inline-block;
+  background-color: rgba(255, 0, 0, 0.1);
+  padding: 2px 8px;
+  border-radius: 6px;
+  margin-bottom: 4px;
+}
+
+.old-price-text {
+  color: #ff5252;
+  text-decoration: line-through;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.new-price {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* دکمه اضافه کردن به سبد خرید */
+.add-to-cart-button {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: white;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.add-to-cart-button:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  transform: translateY(-4px);
+}
+
+.add-to-cart-button:active {
+  transform: translateY(0);
+}
+
+.add-to-cart-button .mr-2 {
+  font-size: 20px;
+}
+
+.add-to-cart-button .text-lg {
+  font-size: 16px;
+}

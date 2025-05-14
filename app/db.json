@@ -1,0 +1,44 @@
+{
+  "Discounted": [
+    {
+    "id": 1,
+    "name": "Tissot Gentleman",
+    "img": "./watch1.png",
+    "discaption": " ساعت شیک و مدرن برای استفاده روزمره. سبک، بادوام ",
+    "oldPrice": "38,500,000",
+    "newPrice" : "33,600,000" 
+  },
+    {
+    "id": 2,
+    "name": "Perpetual Calendar 5327 Gold",
+    "img": "./watch2.png",
+    "discaption": " ساعت شیک و مدرن برای استفاده روزمره. سبک، بادوام ",
+    "oldPrice": "38,500,000",
+    "newPrice" : "33,600,000" 
+  },
+    {
+    "id": 2,
+    "name": "Perpetual Calendar 5327 Gold",
+    "img": "./watch2.png",
+    "discaption": " ساعت شیک و مدرن برای استفاده روزمره. سبک، بادوام ",
+    "oldPrice": "38,500,000",
+    "newPrice" : "33,600,000" 
+  },
+    {
+    "id": 2,
+    "name": "Perpetual Calendar 5327 Gold",
+    "img": "./watch2.png",
+    "discaption": " ساعت شیک و مدرن برای استفاده روزمره. سبک، بادوام ",
+    "oldPrice": "38,500,000",
+    "newPrice" : "33,600,000" 
+  }
+  ],
+  "posts": [
+    { "id": 1, "title": "پست اول", "content": "این یک محتوای تستی است", "userId": 1 },
+    { "id": 2, "title": "پست دوم", "content": "مطلب دوم برای آزمایش", "userId": 2 }
+  ],
+  "products": [
+    { "id": 1, "name": "ساعت هوشمند", "price": 2500000 },
+    { "id": 2, "name": "هدفون بی‌سیم", "price": 1400000 }
+  ]
+}

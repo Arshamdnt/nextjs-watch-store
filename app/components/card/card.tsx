@@ -1,22 +1,56 @@
-import React from 'react';
+// app/components/Card.tsx (یا هر مسیر مناسب دیگر)
+import { LocalOffer } from "@mui/icons-material";
+import "../../styles/CardStyles.css";
+import AddToCartButton from "../../utils/AddToCartButton";
 
-const Card = () => {
-    return (
-            <>
-            
-            <div>
-            <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white bg-opacity-20 backdrop-blur-md">
-                <img className="w-full h-56 object-cover" src="https://via.placeholder.com/500" alt="Image Description" />
-                <div className="p-6">
-                    <h2 className="text-2xl font-semibold text-white">Product Title</h2>
-                    <p className="text-white text-sm mt-2">This is a short description of the product. It highlights the key features and benefits.</p>
-                    <p className="text-xl font-bold text-white mt-4">$199.99</p>
-                </div>
+const getDiscountedProducts = async () => {
+  const res = await fetch("http://localhost:3001/Discounted", {
+    cache: "no-store", // جلوگیری از کش در حالت dev
+  });
+
+  if (!res.ok) {
+    throw new Error("خطا در دریافت اطلاعات");
+  }
+
+  return res.json();
+};
+
+const Card = async () => {
+  const products = await getDiscountedProducts();
+
+  return (
+    <div className="cards-container">
+      {products.map((product: any) => (
+        <div className="card" key={product.id}>
+          <div className="discount-badge cursor-pointer">
+            <LocalOffer className="text-lg" />
+            تخفیف
+          </div>
+
+          <img
+            src={product.img || "./default.png"}
+            alt={product.name}
+            className="card-media"
+          />
+
+          <div className="card-content">
+            <h6 className="card-title cursor-pointer">{product.name}</h6>
+            <p className="card-description">{product.discaption}</p>
+
+            <div className="price-box">
+              <span className="old-price">
+                <span className="old-price-text">{product.oldPrice}</span>
+              </span>
+              <h6 className="new-price">{product.newPrice}</h6>
             </div>
+          </div>
+          <AddToCartButton/>
         </div>
-            
-            </>
-    );
-}
+      ))}
+    </div>
+  );
+};
 
 export default Card;
+
+

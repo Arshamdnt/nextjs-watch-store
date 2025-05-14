@@ -1,4 +1,6 @@
 @import "tailwindcss";
-.whatchpic{
-
+/* globals.css */
+body {
+  direction: rtl;
+  font-family: 'Vazir', sans-serif; /* یا هر فونت فارسی دیگری */
 }
