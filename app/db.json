@@ -2,35 +2,44 @@
   "Discounted": [
     {
     "id": 1,
-    "name": "Tissot Gentleman",
+    "name": "Tissot Gentleman Herrenuhr",
     "img": "./watch1.png",
-    "discaption": " ساعت شیک و مدرن برای استفاده روزمره. سبک، بادوام ",
+    "discaption": "ساعت شیک و خوش‌ساخت سوئیسی با طراحی ساده و کاربردی، مناسب استفاده روزمره و محیط‌های نیمه‌ رسمی .",
     "oldPrice": "38,500,000",
-    "newPrice" : "33,600,000" 
+    "newPrice" : "33,600,000",
+    "gender" : "men",
+    "type": ["classic","Casual"]
   },
     {
     "id": 2,
-    "name": "Perpetual Calendar 5327 Gold",
+    "name": "Patek Philippe Grand Complications 5327J-001",
     "img": "./watch2.png",
-    "discaption": " ساعت شیک و مدرن برای استفاده روزمره. سبک، بادوام ",
-    "oldPrice": "38,500,000",
-    "newPrice" : "33,600,000" 
+    "discaption": "ساعتی فوق‌لوکس با تقویم دائمی و طراحی کلاسیک طلا، مناسب کلکسیونرها و رویدادهای کاملاً رسمی",
+    "oldPrice": "6,720,000,000",
+    "newPrice" : "6,319,000,000",
+    "gender" : "men",
+    "type" : "Luxury"
+    
   },
     {
-    "id": 2,
-    "name": "Perpetual Calendar 5327 Gold",
-    "img": "./watch2.png",
-    "discaption": " ساعت شیک و مدرن برای استفاده روزمره. سبک، بادوام ",
-    "oldPrice": "38,500,000",
-    "newPrice" : "33,600,000" 
+    "id": 3,
+    "name": "Audemars Piguet Royal Oak",
+    "img": "./watch3.png",
+    "discaption": " ساعتی اسپرت-لوکس با طراحی آیکونیک هشت‌ضلعی و موتور اتوماتیک دقیق؛ ترکیبی از اصالت، قدرت و ظرافت مدرن. ",
+    "oldPrice": "5,460,000,000",
+    "newPrice" : "5,125,000,000",
+    "gender" : "men",
+    "type" : ["sport","Luxury"]
   },
     {
-    "id": 2,
-    "name": "Perpetual Calendar 5327 Gold",
-    "img": "./watch2.png",
-    "discaption": " ساعت شیک و مدرن برای استفاده روزمره. سبک، بادوام ",
-    "oldPrice": "38,500,000",
-    "newPrice" : "33,600,000" 
+    "id": 4,
+    "name": "Hermès Arceau Petite Lune Uh",
+    "img": "./watch4.png",
+    "discaption": " ساعتی زنانه با طراحی شاعرانه و ظریف، ترکیب هنر فرانسوی و نمایش فازهای ماه؛ مناسب استایل‌های رسمی و خاص. ",
+    "oldPrice": "415,000,000",
+    "newPrice" : "388,000,000",
+     "gender" : "women",
+    "type" : "Luxury"
   }
   ],
   "posts": [
